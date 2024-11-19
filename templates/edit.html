@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/edit.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='edit.css') }}">
+    <title>Editar Missão</title>
+</head>
+<body>
+<h1>Editar {{ missao.nome_missao }}</h1>
+<section>
+    <form action="/update/{{ missao.id }}" class="container" method="post">
+        <div class="row">
+            <div id="form1">
+                <div class="col-md-6">
+                    <label for="nome_missao">Nome da Missão</label>
+                    <input type="text" name="nome_missao" id="nome_missao" class="form-control" value="{{ missao.nome_missao }}" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="data_lancamento">Data de lançamento</label>
+                    <input type="date" name="data_lancamento" id="data_lancamento" class="form-control" value="{{ missao.data_lancamento }}" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="destino">Destino</label>
+                    <input type="text" name="destino" id="destino" class="form-control" value="{{ missao.destino }}" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado" class="form-control" value="{{ missao.estado }}" autocomplete="off">
+                </div>
+            </div>
+
+            <div id="form2">
+                <div class="col-md-6">
+                    <label for="tripulacao">Tripulação</label>
+                    <input type="text" name="tripulacao" id="tripulacao" class="form-control" value="{{ missao.tripulacao }}" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="carga_util">Carga Útil</label>
+                    <input type="text" name="carga_util" id="carga_util" class="form-control" value="{{ missao.carga_util }}" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="duracao">Duração da Missão</label>
+                    <input type="datetime-local" name="duracao" id="duracao" class="form-control" value="{{ missao.duracao }}" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="custo">Custo</label>
+                    <input type="text" name="custo" id="custo" class="form-control" value="{{ missao.custo }}" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="status_missao">Status da Missão</label>
+            <textarea name="status_missao" id="status_missao" class="form-control" autocomplete="off">{{ missao.status_missao }}</textarea>
+        </div>
+        <div class="row col-xs-12">
+            <button type="submit" class="btn btn-block btn-sucess">Enviar</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/add.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}">
+    <title>Adicionar Missões</title>
+</head>
+<body>
+<h1 >Cadastrar Missões</h1>
+<section >
+    <form action="/create" class="container" method="post">
+        <div class="row">
+            <div id="form1">
+                <div class="col-md-6">
+                    <label for="nome_missao">Nome da Missão</label>
+                    <input type="text" name="nome_missao" id="nome_missao"  class="form-control" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="data_lancamento">Data de lançamento</label>
+                    <input type="date" name="data_lancamento" id="data_lancamento"  class="form-control" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="destino">Destino</label>
+                    <input type="text" name="destino" id="destino" class="form-control" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado" placeholder=" Ativa, Concluída, Abortada" class="form-control" autocomplete="off">
+                </div>
+                
+            </div>
+    
+            <div id="form2">
+                <div class="col-md-6">
+                    <label for="tripulacao">Tripulação</label>
+                    <input type="text" name="tripulacao" id="tripulacao" class="form-control" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="carga_util">Carga Útil</label>
+                    <input type="text" name="carga_util" id="carga_util" class="form-control" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="duracao">Duração da Missão</label>
+                    <input type="datetime-local" name="duracao" id="duracao" class="form-control" autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <label for="custo">Custo</label>
+                    <input type="number" name="custo" id="custo" class="form-control" autocomplete="off">
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-6">
+            <label for="status_missao">Status da Missão</label>
+            <textarea type="text" name="status_missao" id="status_missao"  class="form-control" autocomplete="off"></textarea>
+        </div>
+        <div class="row col-xs-12">
+            <button type="submit" class="btn btn-block btn-sucess">Enviar</button>
+        </div>
+    </form>
+</section>
+
+<script src="../static/script.js"></script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

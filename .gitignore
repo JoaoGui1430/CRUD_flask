@@ -1,0 +1,13 @@
+# Ambientes virtuais
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de banco de dados
+*.db
+
+# Configurações locais
+*.log
+*.env

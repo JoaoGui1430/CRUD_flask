@@ -1,0 +1,112 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:url("./img/index-fundo.jpg") no-repeat center;
+    background-size: cover;
+    height: 92vh;
+}
+h1{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.801);
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.add-box{
+    margin: auto;
+    background-color: #0000FF;
+    text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.801);
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.add-box a{
+    color: #fff;
+    padding: 5px;
+}
+
+.add-box:hover{
+    background-color: #0000ab;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    max-width: 92%;
+    margin: auto;
+    margin-top: 80px;
+    
+}
+
+.table-striped{
+    border-collapse: collapse;
+    
+}
+.table-striped th{
+    color: #fff;
+    font-weight: 700;
+    height: 40px;
+    text-transform: uppercase;
+    text-shadow: 3px 1px 3px rgb(0, 0, 0);
+    background-color: #e56520;
+    border: 1px solid rgb(0, 0, 0);
+    
+   
+}
+.table-striped td{
+    border: 1px solid rgb(0, 0, 0);
+    width: 150px;
+    text-align: center;
+    background-color: #1e90a9cb;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+    height: 120px;
+    padding: 5px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.574);
+    
+}
+.btn-editar,.btn-excluir{
+    background-color: #0000ab;
+    color: #fff;
+    padding:5px;
+    width: 80px;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.7;    
+    }
+}
+
+
