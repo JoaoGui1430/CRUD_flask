@@ -29,6 +29,7 @@ git clone https://github.com/JoaoGui1430/CRUD_flask.git
 ## Como rodar o projeto
 
 Acesse a pasta do projeto no terminal/cmd
+
 cd CRUD_flask
 
 Crie e ative um ambiente virtual (opcional, mas recomendado)
@@ -49,10 +50,15 @@ O servidor inciará na porta 5000 - acesse http://127.0.0.1:5000 # Se não funci
 A aplicação oferece as funcionalidades de:
 
 Listar missões (visualização de todas as missões cadastradas)
+
 Criar uma nova missão (adicionar uma nova entrada ao banco de dados)
+
 Ler informações detalhadas de uma missão específica
+
 Atualizar informações de uma missão existente
+
 Deletar uma missão
+
 Cada missão possui os seguintes atributos: id, nome_missao, data_lancamento, destino, estado, tripulacao, carga_util, duracao, custo e status_missao.
 
 ## Exemplo de Uso
